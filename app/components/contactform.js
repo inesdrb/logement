@@ -34,7 +34,7 @@ export default function ContactForm() {
 
   return (
     <div className="p-8 max-w-4xl mx-auto space-y-12">
-      <h1 className="text-3xl font-bold text-center">Contactez-nous</h1>
+      <h1 className="text-3xl font-bold text-center text-secondary font-itim ">Contactez-nous</h1>
 
       {/* Formulaire */}
       <form
@@ -42,7 +42,7 @@ export default function ContactForm() {
         className="bg-color-text p-6 rounded shadow space-y-4"
       >
         <div>
-          <label className="block text-sm font-medium text-gray-700">Nom</label>
+          <label className="block text-sm font-medium text-secondary">Nom</label>
           <input
             type="text"
             {...register('name')}
@@ -54,7 +54,7 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700">Email</label>
+          <label className="block text-sm font-medium text-secondary">Email</label>
           <input
             type="email"
             {...register('email')}
@@ -66,7 +66,7 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700">Téléphone</label>
+          <label className="block text-sm font-medium text-secondary">Téléphone</label>
           <input
             type="text"
             {...register('telephone')}
@@ -80,7 +80,7 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700">Message</label>
+          <label className="block text-sm font-medium text-secondary">Message</label>
           <textarea
             {...register('message')}
             rows={3}
@@ -95,7 +95,7 @@ export default function ContactForm() {
 
         <button
           type="submit"
-          className="bg-button text-color-text px-4 py-2 rounded hover:bg-hover-button transition"
+          className="hover:bg-gray-100 text-primary px-4 py-2 rounded bg-secondary transition font-bold"
         >
           Envoyer
         </button>
@@ -103,16 +103,16 @@ export default function ContactForm() {
 
       {/* Informations de contact */}
       <div className="bg-gray-100 p-6 rounded shadow space-y-4">
-        <h2 className="text-xl font-semibold">Informations de contact</h2>
-        <p className="flex items-center gap-2">
+        <h2 className="text-xl font-semibold text-secondary">Informations de contact</h2>
+        <p className="flex items-center gap-2 text-secondary">
           <FaMapMarkerAlt className="text-background-footer" />
           Adresse : Chabbia, Tozeur 2243
         </p>
-        <p className="flex items-center gap-2">
+        <p className="flex items-center gap-2 text-secondary">
           <FaPhone className="text-background-footer" />
           Téléphone : +216123456
         </p>
-        <p className="flex items-center gap-2">
+        <p className="flex items-center gap-2 text-secondary">
           <FaEnvelope className="text-background-footer" />
           Email : contact@zanimo.tn
         </p>
