@@ -114,7 +114,7 @@ export default function ContactForm() {
         </p>
         <p className="flex items-center gap-2 text-secondary">
           <FaEnvelope className="text-background-footer" />
-          Email : contact@zanimo.tn
+          Email : contact@local.tn
         </p>
         <img
           src="/images/image1.jpg"
